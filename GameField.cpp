@@ -58,7 +58,6 @@ Start:
 	{
 	
 		lobbi.ShowButton();
-		helper.ShowButton();
 		player.ShowALLCards();
 		player2.ShowALLCards(true);
 		user_button.ShowButton();
@@ -68,6 +67,7 @@ Start:
 		if (a == 3 and !_kbhit()) Sleep(1000);
 		else
 		{
+			helper.ShowButton();
 			while (b!= 'n' and b != 'N') {
 				b = _getch();
 				if (b == 27)
